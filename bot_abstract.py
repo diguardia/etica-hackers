@@ -4,7 +4,11 @@ from abc import ABC, abstractmethod
 # las clases que hereden de ella.
 # Cada grupo deberá implementar una clase Bot<XXX> que herede de esta clase y que implemente
 class BotAbstract(ABC):
-    
+    # Este es el alfabeto que se usará para encriptar y desencriptar los mensajes.
+    @classmethod
+    def Alfabeto(cls):
+        return "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+
     # Devuelve el nombre del Bot
     @property
     @abstractmethod
